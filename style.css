@@ -1,0 +1,280 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+#logo {
+    font-family: 'Limelight', cursive;
+    font-size: 2em;
+}
+
+#menu {
+    display: none;
+}
+
+#menu div {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 5px 0px;
+}
+
+header {
+    height: 300px;
+    background-image: url(https://www.frammentirivista.it/wp-content/uploads/2017/09/the-jazz-singer-marquee.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+header h1 {
+    width: 780px;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#links a {
+    margin: 0px 5px;
+    border: 1px solid white;
+    padding: 2px 5px;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+    position: relative;
+}
+
+#photo {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+#name {
+    color: black;
+    padding: 5px;
+    text-align: center;
+}
+
+article {
+    margin: 20px calc(20%);
+}
+
+#question {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+input[type="text"] {
+    margin: 10px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.box {
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+    font-size: 1.5em;
+    margin: 40px 20px;
+}
+
+.box div {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#movie_box div {
+    background-image: url(data:image/png;base64,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);
+}
+
+#anime_box div {
+    background-image: url(https://androidguias.com/wp-content/uploads/2021/04/dibujos-anime.jpg);
+}
+
+.hidden {
+    display: none;
+}
+
+#movie {
+    padding: 20px;
+    text-align: left;
+}
+
+#movie h2 {
+    font-size: 2em;
+    margin-bottom: 0px;
+}
+
+#movie h1 {
+    font-size: 1em;
+    color: gray;
+    margin-top: 0px;
+}
+
+#movie img {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.img {
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+footer div {
+    padding: 20px;
+}
+
+footer div a:link {
+    color: white;
+}
+
+footer div a:visited {
+    color: gray;
+}
+
+footer div a:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 500px) {
+    header {
+        height: 40vh;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    #logo {
+        font-size: 1.4em;
+    }
+
+    article {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .box {
+        width: 75%;
+        height: 200px;
+    }
+
+    section .index {
+        width: 3px;
+    }
+
+    section .content {
+        width: 70vw;
+    }
+
+    .img {
+        margin-bottom: 40px;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer div {
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+@media (max-width: 750px) {
+    #links{
+        display: none;
+    }
+    
+    #menu{
+        display: block;
+    }
+}
+
+@media (max-width: 850px) {
+    header h1 {
+        width: fit-content;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog del Cinema</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+        <meta name="viewport"content="width=device-width, initial-scale=1">
+        <script src="script.js" defer></script>
+    </head>
+    <body>       
+        <nav>
+            <div id="logo">Blog del Cinema</div>
+            <div id="links">
+                <a>Home</a>
+                <a>Recensioni</a>
+                <a>Classifiche</a>
+                <a>Rubriche</a>
+            </div>
+            <div id="menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+        <header>
+            <div id="overlay"></div>
+        </header>
+        <div id="profile">
+            <img id="photo" src="https://avatars.githubusercontent.com/u/67400403?v=4">
+            <div id="name">
+                <strong>Felice Simone Coniglio</strong><br>
+                <em>@faelconny</em>
+            </div>
+        </div>
+        <div id="question"><strong>Cosa vuoi cercare?</strong></div>
+        <article>
+            <div class="box" id="movie_box">
+                <strong>Film</strong>
+                <div></div>
+            </div>
+            <div class="box" id="anime_box">
+                <strong>Anime</strong>
+                <div></div>
+            </div>
+            <form id="movie_form" class="hidden">
+                Inserisci il nome del film:
+                <input type="text" id="movie_text">
+                <input type="submit" value="Cerca">
+            </form>
+            <form id="anime_form" class="hidden">
+                Inserisci il nome dell'anime:
+                <input type="text" id="anime_text">
+                <input type="submit" value="Cerca">
+            </form>
+            <button id="movie_reset" class="hidden">Cerca un anime</button>
+            <button id="anime_reset" class="hidden">Cerca un film</button>
+            <div id="movie"></div>
+        </article>
+        <footer>
+            <div>
+                Università degli Studi di Catania<br>
+                Dipartimento di Ingegneria Elettrica Elettronica e Informatica<br>
+                <a href="https://www.dieei.unict.it/corsi/l-8-inf">Corso di Laurea in Ingegneria Informatica</a>
+            </div>
+            <div>
+                Felice Simone Coniglio<br>
+                n. matricola: 1000001151<br>
+                e-mail: <a href="mailto:felice.coniglio@studium.unict.it">felice.coniglio@studium.unict.it</a>
+            </div>
+        </footer>
+    </body>
+</html>
